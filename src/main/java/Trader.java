@@ -5,6 +5,7 @@
  * Handle the TODOs in the main method as needed.
  */
 
+import java.nio.ReadOnlyBufferException;
 import java.util.*;
 
 
@@ -96,9 +97,8 @@ public class Trader {
         List<Tradable> all_items = Arrays.asList(
                 new Horse(),
                 new Horse(),
-                new Horse()
-                // TODO: Add Tradable objects here!
-        );
+                new Horse(),
+                new Donkey());
 
         /* Below, we've created two Traders. Their money, inventory, and
          * wishlists are randomly generated (see the constructor above).
